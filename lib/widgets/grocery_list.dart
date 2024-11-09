@@ -43,7 +43,7 @@ class _GroceryListState extends State<GroceryList> {
       body: _groceryItems.isEmpty
           ? const Center(
               child: Text(
-                'You got no items yet.',
+                'No items added yet.',
                 style: TextStyle(fontSize: 24, color: Colors.grey),
               ),
             )
