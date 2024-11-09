@@ -50,7 +50,7 @@ class _GroceryListState extends State<GroceryList> {
           : ListView.builder(
               itemCount: _groceryItems.length,
               itemBuilder: (ctx, index) => Dismissible(
-                key: Key(_groceryItems[index].name),
+                key: ValueKey(_groceryItems[index].name),
                 onDismissed: (direction) {
                   setState(() {
                     _groceryItems.removeAt(index);
